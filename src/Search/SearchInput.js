@@ -1,10 +1,10 @@
 import React from 'react';
 import { func, string } from 'prop-types';
 import styled from 'styled-components';
-import { Absolute, Flex, Relative, Box } from 'rebass';
+import { Absolute, Flex, Relative } from 'rebass';
 
 
-import SearchIcon from 'react-icons/lib/fa/search';
+import { Search }from 'react-feather';
 import { colors } from '../theme';
 import Input from '../input';
 
@@ -26,25 +26,23 @@ const Fill = styled(Flex)`
 `;
 
 function SearchInput({ value, placeholder, onChange, ...props }) {
-  return (
-    <Box width={1/2}>
-    <Relative {...props}>
-      <Absolute top bottom left>
-        <Fill align="center" px={4}>
-          <SearchIcon color={colors.gray6} />
-        </Fill>
-      </Absolute>
-      <Input
-        value={value}
-        placeholder={placeholder}
-        onChange={onChange}
-        type="search"
-        py={4}
-        pr={4}
-        pl="56px"
-      />
-    </Relative>
-  </Box>
+  return ( 
+        <Relative {...props}>
+          <Absolute top bottom left>
+            <Fill align="center" px={4}>
+              <Search color={colors.gray6} />
+            </Fill>
+          </Absolute>
+          <Input
+            value={value}
+            placeholder={placeholder}
+            onChange={onChange}
+            type="search"
+            py={4}
+            pr={4}
+            pl="56px"
+          />
+      </Relative>
   );
 }
 

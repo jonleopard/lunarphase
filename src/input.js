@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Input, } from 'rebass';
+import { Input } from 'rebass';
 
 import { shadows } from './theme';
 
@@ -9,7 +9,4 @@ export default styled(Input)`
   &:focus{
     box-shadow: ${shadows.outline};
   }
-
-  font-size: 20px;
-
 `;
