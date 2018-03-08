@@ -1,5 +1,5 @@
 # Lunarphase 🌙
-----
+
 A small application that shows the current moon phase for your location.
 Comes with fries on top.
 
