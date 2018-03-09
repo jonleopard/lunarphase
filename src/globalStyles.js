@@ -4,29 +4,38 @@ import { injectGlobal } from 'styled-components';
 injectGlobal`
   ${styledNormalize}
  
-
-  ::selection {
-    background-color: #00f;
-    color: #fff;
-  }
-
-  * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
-  }
-
-  }
-  p {
-    margin: 0;
-    padding: 0;
+  *,
+  *:before,
+  *:after {
+    transition: inherit;
   }
 
   body {
     background-color: black;
     color: white;
     margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    transition: color 0.15s, background-color 0.15s, box-shadow 0.15s;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol";
     }
+
+
+  ::selection {
+    background-color: #00f;
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
 `;

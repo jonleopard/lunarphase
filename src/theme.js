@@ -14,6 +14,12 @@ export const lineHeights = {
   loose: 2,
 };
 
+export function textIndent(indent) {
+  return `
+    text-indent: 50px;
+  `;
+}
+
 const palette = palx('#fff');
 
 const flattened = Object.keys(palette).reduce((accumlator, key) => {

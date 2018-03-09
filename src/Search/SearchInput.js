@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Absolute, Flex, Relative } from 'rebass';
 
 
-import { Search }from 'react-feather';
+import { Search as SearchIcon } from 'react-feather';
 import { colors } from '../theme';
 import Input from '../input';
 
@@ -27,22 +27,22 @@ const Fill = styled(Flex)`
 
 function SearchInput({ value, placeholder, onChange, ...props }) {
   return ( 
-        <Relative {...props}>
-          <Absolute top bottom left>
-            <Fill align="center" px={4}>
-              <Search color={colors.gray6} />
-            </Fill>
-          </Absolute>
-          <Input
-            value={value}
-            placeholder={placeholder}
-            onChange={onChange}
-            type="search"
-            py={4}
-            pr={4}
-            pl="56px"
-          />
-      </Relative>
+    <Relative {...props}>
+      <Absolute bottom={0} left={0} top={0}>
+        <Fill align="center" px={4}>
+          <SearchIcon color={colors.gray6} />
+        </Fill>
+      </Absolute>
+      <Input
+        value={value}
+        placeholder={placeholder}
+        onChange={onChange}
+        type="search"
+        py={4}
+        pr={4}
+        pl={10}
+      />
+  </Relative>
   );
 }
 
