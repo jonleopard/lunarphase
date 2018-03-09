@@ -2,23 +2,24 @@ import React from 'react';
 import { Flex } from 'rebass';
 import Link from '../Link';
 
-function Footer() {
-  return (
-    <Flex 
-      is='footer'
-      direction="column"
-      align="center"
-      py={7}
-    >
+
+
+const Footer = props => (
+  <footer>
+      <Flex mt={5} justifyContent='flex-start'>
       <Link
-        href='https://twitter.com/jonlprd'
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Made by @jonlprd
-      </Link>
-    </Flex>
-  );
-}
+          href='https://github.com/jonleopard/lunarphase'
+          children='GitHub'
+       />
+       <Link
+       		ml='auto'
+          href='https://jonleopard.com'
+          children='Made by Jon Leopard'
+        />
+      </Flex>
+  </footer>
+)
+
+
 
 export default Footer
