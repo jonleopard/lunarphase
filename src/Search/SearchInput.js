@@ -28,6 +28,10 @@ const Fill = styled(Flex)`
 // Minor <Input /> change to make text fit nicely
 const MainSearch = Input.extend`
   text-indent: 50px;
+  transition:
+    color 0.15s,
+    background-color 0.15s,
+    box-shadow 0.15s;
 `;
 
 

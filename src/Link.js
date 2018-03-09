@@ -6,6 +6,7 @@ import { colors } from './theme';
 export default styled(Link)`
   color: ${colors.gray9};
   &:hover {
-    color: ${colors.base};
+    color: ${colors.gray1};
+    transition: 0.15s;
   }
 `;

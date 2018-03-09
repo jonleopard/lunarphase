@@ -14,7 +14,6 @@ injectGlobal`
     background-color: black;
     color: white;
     margin: 0;
-    transition: color 0.15s, background-color 0.15s, box-shadow 0.15s;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
