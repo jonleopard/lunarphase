@@ -25,22 +25,26 @@ const Fill = styled(Flex)`
   height: 100%;
 `;
 
+// Minor <Input /> change to make text fit nicely
+const MainSearch = Input.extend`
+  text-indent: 50px;
+`;
+
+
 function SearchInput({ value, placeholder, onChange, ...props }) {
   return ( 
     <Relative {...props}>
-      <Absolute bottom={0} left={0} top={0}>
-        <Fill align="center" px={4}>
-          <SearchIcon color={colors.gray6} />
+      <Absolute bottom={0} top={0}>
+        <Fill align="center" px={3}>
+          <SearchIcon color={colors.gray6} size={24} />
         </Fill>
       </Absolute>
-      <Input
+      <MainSearch
         value={value}
         placeholder={placeholder}
         onChange={onChange}
         type="search"
-        py={4}
-        pr={4}
-        pl={10}
+        py={3}
       />
   </Relative>
   );
