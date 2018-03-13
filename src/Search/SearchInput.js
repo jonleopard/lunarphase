@@ -3,7 +3,6 @@ import { func, string } from 'prop-types';
 import styled from 'styled-components';
 import { Absolute, Flex, Relative } from 'rebass';
 
-
 import { Search as SearchIcon } from 'react-feather';
 import { colors } from '../theme';
 import Input from '../input';
@@ -28,15 +27,11 @@ const Fill = styled(Flex)`
 // Minor <Input /> change to make text fit nicely
 const MainSearch = Input.extend`
   text-indent: 50px;
-  transition:
-    color 0.15s,
-    background-color 0.15s,
-    box-shadow 0.15s;
+  transition: color 0.15s, background-color 0.15s, box-shadow 0.15s;
 `;
 
-
 function SearchInput({ value, placeholder, onChange, ...props }) {
-  return ( 
+  return (
     <Relative {...props}>
       <Absolute bottom={0} top={0}>
         <Fill align="center" px={3}>
@@ -50,7 +45,7 @@ function SearchInput({ value, placeholder, onChange, ...props }) {
         type="search"
         py={3}
       />
-  </Relative>
+    </Relative>
   );
 }
 

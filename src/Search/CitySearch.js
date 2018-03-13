@@ -7,7 +7,7 @@ class CitySearch extends React.Component {
     inputValue: '',
   };
 
-  handleInputChange = (event) => {
+  handleInputChange = event => {
     this.setState({ inputValue: event.target.value });
   };
 

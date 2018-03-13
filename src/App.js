@@ -10,18 +10,16 @@ class App extends Component {
   render() {
     return (
       <Container>
-        <Flex alignItems='center'>
-        <Box width={1/4}>
-          <Image
-            src={moonImg}
-          />
-        </Box>
-        <Box width={1/2} pl={50}>
-          <Masthead />
-          <CitySearch />
-          <Footer />
-        </Box>
-      </Flex>
+        <Flex alignItems="center">
+          <Box width={1 / 4}>
+            <Image src={moonImg} />
+          </Box>
+          <Box width={1 / 2} pl={50}>
+            <Masthead />
+            <CitySearch />
+            <Footer />
+          </Box>
+        </Flex>
       </Container>
     );
   }

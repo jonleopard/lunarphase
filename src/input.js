@@ -6,7 +6,7 @@ import { shadows } from './theme';
 export default styled(Input)`
   box-shadow: ${shadows.small};
 
-  &:focus{
+  &:focus {
     box-shadow: ${shadows.outline};
   }
 `;
