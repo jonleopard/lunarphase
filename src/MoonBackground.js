@@ -1,9 +1,13 @@
 import React from 'react';
-import { Box, BackgroundImage } from 'rebass';
+import { Image } from 'rebass';
 import moonImg from './moon.png';
 
 const MoonBackground = () => {
-  return <BackgroundImage src={moonImg} />;
+  return (
+    <moonbackground>
+      <Image src={moonImg} />
+    </moonbackground>
+  );
 };
 
 export default MoonBackground;

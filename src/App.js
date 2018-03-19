@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
-import { Flex, Box, Image } from 'rebass';
-import Container from './Container.js';
+import { Flex, Box } from 'rebass';
 import Masthead from './Masthead';
 import CitySearch from './Search/CitySearch';
 import Footer from './Footer';
-import moonImg from './moon.png';
+import MoonBackground from './MoonBackground';
 
 class App extends Component {
   render() {
     return (
-      <Container>
-        <Flex alignItems="center">
-          <Box width={1 / 4}>
-            <Image src={moonImg} />
-          </Box>
-          <Box width={1 / 2} pl={50}>
-            <Masthead />
-            <CitySearch />
-            <Footer />
-          </Box>
-        </Flex>
-      </Container>
+      <Flex alignItems="center">
+        <Box
+          width={[1 / 4, 1 / 4, 1 / 4]}
+          display={['block', 'none']}
+          minWidth={600}
+        >
+          <MoonBackground />
+        </Box>
+
+        <Box width={1 / 2} pl={50}>
+          <Masthead />
+          <CitySearch />
+          <Footer />
+        </Box>
+      </Flex>
     );
   }
 }
