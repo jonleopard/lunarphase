@@ -1,8 +1,8 @@
 import palx from 'palx';
 
-export const space = [0, 4, 8, 12, 16, 24, 32, 64]
+export const space = [0, 4, 8, 12, 16, 24, 32, 64];
 
-export const weights = [400, 500]
+export const weights = [400, 500];
 
 export const lineHeights = {
   none: 1,
@@ -42,8 +42,10 @@ export const colors = {
 
 export const shadows = {
   none: 'none',
-  small: '255 255 255 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(255, 255, 255, 0.1)',
-  medium: '255 255 255 1px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(255, 255, 0, 0.1)',
+  small:
+    '255 255 255 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(255, 255, 255, 0.1)',
+  medium:
+    '255 255 255 1px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(255, 255, 0, 0.1)',
   outline: `255 255 255 2px ${colors.base}`,
 };
 
