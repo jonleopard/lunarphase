@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Lunarphase.io",
+  "name": "Lunarphase | A tiny app that shows the current moonphase",
   "icons": [
     {
       "src": "favicon.ico",
