@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Provider, Flex, Box } from 'rebass';
 import Masthead from './Masthead';
 import MoonPhaseForm from './Form/MoonPhaseForm';
-import Results from './Results';
+import Results from './MoonData/Results';
 import Footer from './Footer';
 import MoonBackground from './MoonBackground';
 
@@ -15,13 +15,14 @@ class App extends Component {
     ageOfMoon: undefined,
     phaseofMoon: undefined,
     percentIlluminated: undefined,
-    error: undefined,
+    error: null,
+    isLoaded: false,
   };
 
   getMoonPhase = async e => {
     e.preventDefault();
-    const country = e.target.elements.country.value;
     const city = e.target.elements.city.value;
+    const country = e.target.elements.country.value;
     const api_call = await fetch(
       `https://api.wunderground.com/api/${API_KEY}/astronomy/q/${country}/${city}.json`
     );
@@ -36,9 +37,7 @@ class App extends Component {
       });
     } else {
       this.setState({
-        ageOfMoon: undefined,
-        phaseofMoon: undefined,
-        percentIlluminated: undefined,
+        isLoaded: true,
         error: 'Please enter the value',
       });
     }
@@ -51,7 +50,6 @@ class App extends Component {
           <Box w={[1 / 4, 1 / 4, 1 / 4]}>
             <MoonBackground />
           </Box>
-
           <Box w={1 / 2} pl={50}>
             <Masthead />
             <MoonPhaseForm getMoonPhase={this.getMoonPhase} />

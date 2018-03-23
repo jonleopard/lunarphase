@@ -3,7 +3,7 @@ import { Flex, Box, Text } from 'rebass';
 
 const Results = props => (
   <Flex>
-    <Box w={1}>
+    <Box w={1} pt={3}>
       {props.ageOfMoon && (
         <Text
           textAlign="left"
