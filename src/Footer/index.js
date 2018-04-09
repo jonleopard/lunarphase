@@ -4,7 +4,7 @@ import Link from '../Link';
 
 const Footer = props => (
   <footer>
-    <Flex mt={3} justifyContent="flex-start">
+    <Flex mt={3}>
       <Link
         href="https://github.com/jonleopard/moonphase.space"
         children="GitHub"

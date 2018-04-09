@@ -1,9 +1,8 @@
 import React from 'react';
-import { Provider, Flex, Box } from 'rebass';
+import { Provider, Flex, Box, Container } from 'rebass';
 import Masthead from './Masthead';
 import MoonData from './MoonData/';
 import GetMoonPhaseBtn from './GetMoonPhaseBtn/';
-import Container from './Container';
 import Footer from './Footer';
 import MoonBackground from './MoonBackground';
 
@@ -26,7 +25,6 @@ class App extends React.Component {
       `https://api.wunderground.com/api/${API_KEY}/astronomy/q/France/Paris.json`
     );
     const data = await api_call.json();
-    console.log(data);
     if (data) {
       this.setState({
         ageOfMoon: data.moon_phase.ageOfMoon,
@@ -44,24 +42,27 @@ class App extends React.Component {
   render() {
     return (
       <Provider>
-        <Flex flexDirection="row" alignItems="center">
-          <MoonBackground />
-          <Container>
-            <Box w={[1, 1 / 2, 1 / 2]} pl={[0, 3, 3]} py={[4, 4, 4]}>
-              <Masthead />
-              <GetMoonPhaseBtn
-                children="Get Current Moon Phase"
-                onClick={this.getMoonPhase}
-                width={1}
-              />
-              <MoonData
-                ageOfMoon={this.state.ageOfMoon}
-                phaseofMoon={this.state.phaseofMoon}
-                percentIlluminated={this.state.percentIlluminated}
-                error={this.state.error}
-              />
-              <Footer />
-            </Box>
+        <Flex
+          flexWrap="wrap"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <Box w={[0, 1 / 4, 1 / 4]}>
+            <MoonBackground />
+          </Box>
+          <Container w={[1, 1 / 3, 1 / 3]} pt={[4, 0, 0]} px={[3, 0, 0]}>
+            <Masthead />
+            <GetMoonPhaseBtn
+              children="Get Current Moon Phase"
+              onClick={this.getMoonPhase}
+            />
+            <MoonData
+              ageOfMoon={this.state.ageOfMoon}
+              phaseofMoon={this.state.phaseofMoon}
+              percentIlluminated={this.state.percentIlluminated}
+              error={this.state.error}
+            />
+            <Footer />
           </Container>
         </Flex>
       </Provider>
