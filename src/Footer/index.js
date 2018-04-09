@@ -5,7 +5,10 @@ import Link from '../Link';
 const Footer = props => (
   <footer>
     <Flex mt={3} justifyContent="flex-start">
-      <Link href="https://github.com/jonleopard/lunarphase" children="GitHub" />
+      <Link
+        href="https://github.com/jonleopard/moonphase.space"
+        children="GitHub"
+      />
       <Link
         ml="auto"
         href="https://jonleopard.com"
