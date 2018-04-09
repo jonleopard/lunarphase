@@ -2,8 +2,8 @@ import React from 'react';
 import { Flex, Box, Text } from 'rebass';
 
 const MoonData = props => (
-  <Flex>
-    <Box w={1 / 2} pt={3}>
+  <Flex flexWrap="wrap" flexDirection="column">
+    <Box w={1} pt={3}>
       {props.ageOfMoon && (
         <Text
           textAlign="left"
@@ -11,6 +11,8 @@ const MoonData = props => (
           children={`Age of Moon: ${props.ageOfMoon}`}
         />
       )}
+    </Box>
+    <Box w={1} pt={3}>
       {props.phaseofMoon && (
         <Text
           textAlign="left"
@@ -18,6 +20,8 @@ const MoonData = props => (
           children={`Current phase: ${props.phaseofMoon}`}
         />
       )}
+    </Box>
+    <Box w={1} pt={3}>
       {props.percentIlluminated && (
         <Text
           textAlign="left"
@@ -25,6 +29,8 @@ const MoonData = props => (
           children={`Percent Illuminated: ${props.percentIlluminated} %`}
         />
       )}
+    </Box>
+    <Box w={1} pt={3}>
       {props.error && (
         <Text
           textAlign="left"

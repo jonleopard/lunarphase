@@ -3,6 +3,7 @@ import { Provider, Flex, Box } from 'rebass';
 import Masthead from './Masthead';
 import MoonData from './MoonData/';
 import GetMoonPhaseBtn from './GetMoonPhaseBtn/';
+import Container from './Container';
 import Footer from './Footer';
 import MoonBackground from './MoonBackground';
 
@@ -43,25 +44,25 @@ class App extends React.Component {
   render() {
     return (
       <Provider>
-        <Flex alignItems="center">
-          <Box w={[1 / 4, 1 / 4, 1 / 4]}>
-            <MoonBackground />
-          </Box>
-          <Box w={1 / 2} pl={50}>
-            <Masthead />
-            <GetMoonPhaseBtn
-              children="Get Current Moon Phase"
-              onClick={this.getMoonPhase}
-              width={1}
-            />
-            <MoonData
-              ageOfMoon={this.state.ageOfMoon}
-              phaseofMoon={this.state.phaseofMoon}
-              percentIlluminated={this.state.percentIlluminated}
-              error={this.state.error}
-            />
-            <Footer />
-          </Box>
+        <Flex flexDirection="row" alignItems="center">
+          <MoonBackground />
+          <Container>
+            <Box w={[1, 1 / 2, 1 / 2]} pl={[0, 3, 3]} py={[4, 4, 4]}>
+              <Masthead />
+              <GetMoonPhaseBtn
+                children="Get Current Moon Phase"
+                onClick={this.getMoonPhase}
+                width={1}
+              />
+              <MoonData
+                ageOfMoon={this.state.ageOfMoon}
+                phaseofMoon={this.state.phaseofMoon}
+                percentIlluminated={this.state.percentIlluminated}
+                error={this.state.error}
+              />
+              <Footer />
+            </Box>
+          </Container>
         </Flex>
       </Provider>
     );
