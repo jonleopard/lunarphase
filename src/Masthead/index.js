@@ -12,7 +12,7 @@ function Masthead() {
       </Box>
       <Box w={1}>
         <Text f={5} color="gray9">
-          Moonphase.io
+          Moonphase.space
         </Text>
         <Text color="gray10" mb={4}>
           A tiny app that tells you the current moon phase.
