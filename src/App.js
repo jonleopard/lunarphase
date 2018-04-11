@@ -1,8 +1,8 @@
 import React from 'react';
 import { Provider, Flex, Box, Container } from 'rebass';
 import Masthead from './Masthead';
-import MoonData from './MoonData/';
-import GetMoonPhaseBtn from './GetMoonPhaseBtn/';
+import MoonData from './MoonData';
+import GetMoonPhaseBtn from './GetMoonPhaseBtn';
 import Footer from './Footer';
 import MoonBackground from './MoonBackground';
 
