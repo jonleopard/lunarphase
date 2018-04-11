@@ -6,7 +6,6 @@ import React from 'react';
 import { func, string } from 'prop-types';
 import styled from 'styled-components';
 import Button from '../Button';
-//import { colors } from '../theme';
 
 const WideBtn = styled(Button)`
   background-color: #0083dd;
