@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "eslint-config-prettier": "^2.9.0",
-    "grid-styled": "^4.0.0",
+    "grid-styled": "^5.0.2",
     "palx": "^1.0.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -34,7 +34,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
-    "prettier": "1.12.0",
+    "prettier": "^1.14.2",
     "pretty-quick": "^1.4.1"
   }
 }
