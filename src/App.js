@@ -47,7 +47,7 @@ class App extends React.Component {
           alignItems="center"
           justifyContent="space-between"
         >
-          <Box w={[0, 1 / 4, 1 / 4]}>
+          <Box width={[0, 1 / 4, 1 / 4]}>
             <MoonBackground />
           </Box>
           <Container w={[1, 1 / 3, 1 / 3]} pt={[4, 0, 0]} px={[3, 0, 0]}>

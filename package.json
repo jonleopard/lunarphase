@@ -6,14 +6,14 @@
     "eslint-config-prettier": "^3.0.1",
     "grid-styled": "^5.0.2",
     "palx": "^1.0.3",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-feather": "^1.0.8",
     "react-scripts": "^1.1.5",
-    "rebass": "^2.0.0-0",
-    "styled-components": "^3.4.5",
+    "rebass": "^2.3.3",
+    "styled-components": "^3.4.6",
     "styled-normalize": "^8.0.0",
-    "styled-system": "^3.0.2"
+    "styled-system": "^3.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
