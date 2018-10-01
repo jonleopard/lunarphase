@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-prettier": "^3.1.0",
     "grid-styled": "^5.0.2",
     "palx": "^1.0.3",
     "react": "^16.5.2",
@@ -13,7 +13,7 @@
     "rebass": "^2.3.4",
     "styled-components": "^3.4.9",
     "styled-normalize": "^8.0.1",
-    "styled-system": "^3.1.4"
+    "styled-system": "^3.1.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,8 +31,8 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "husky": "^0.14.3",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.0.1",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
     "pretty-quick": "^1.7.0"
