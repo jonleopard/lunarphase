@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Flex, Box, Container } from 'rebass';
+import React from 'react';
+import { Provider, Flex, Box, Container } from 'rebass';
 import Masthead from './Masthead';
 import MoonData from './MoonData';
 import GetMoonPhaseBtn from './GetMoonPhaseBtn';
@@ -41,7 +41,7 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div>
+      <Provider>
         <Flex
           flexWrap="wrap"
           alignItems="center"
@@ -50,7 +50,7 @@ class App extends React.Component {
           <Box width={[0, 1 / 4, 1 / 4]}>
             <MoonBackground />
           </Box>
-          <Container width={[1, 1 / 3, 1 / 3]} pt={[4, 0, 0]} px={[3, 0, 0]}>
+          <Container w={[1, 1 / 3, 1 / 3]} pt={[4, 0, 0]} px={[3, 0, 0]}>
             <Masthead />
             <GetMoonPhaseBtn
               children="Get Current Moon Phase"
@@ -65,7 +65,7 @@ class App extends React.Component {
             <Footer />
           </Container>
         </Flex>
-      </div>
+      </Provider>
     );
   }
 }
