@@ -8,7 +8,7 @@ function Masthead() {
   return (
     <Box>
       <Moon size={50} />
-      <Text f={5} color="gray9">
+      <Text fontSize={5} color="gray9">
         Moonphase.space
       </Text>
       <Text color="gray10" mb={4}>
