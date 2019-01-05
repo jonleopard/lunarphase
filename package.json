@@ -9,11 +9,11 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-feather": "^1.1.5",
-    "react-scripts": "^2.1.2",
+    "react-scripts": "^2.1.3",
     "rebass": "^3.0.0",
     "styled-components": "^4.1.3",
     "styled-normalize": "^8.0.4",
-    "styled-system": "^3.1.11"
+    "styled-system": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
