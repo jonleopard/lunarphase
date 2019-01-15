@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-prettier": "^3.4.0",
     "grid-styled": "^5.0.2",
     "palx": "^1.0.3",
     "react": "^16.7.0",
