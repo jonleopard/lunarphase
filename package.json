@@ -12,7 +12,7 @@
     "react-scripts": "^2.1.3",
     "rebass": "^3.0.1",
     "styled-components": "^4.1.3",
-    "styled-normalize": "^8.0.4",
+    "styled-normalize": "^8.0.6",
     "styled-system": "^3.2.1"
   },
   "scripts": {
@@ -33,8 +33,8 @@
     "babel-cli": "^6.26.0",
     "eslint-plugin-prettier": "^3.0.1",
     "husky": "^1.3.1",
-    "lint-staged": "^8.1.1",
-    "prettier": "^1.16.1",
+    "lint-staged": "^8.1.3",
+    "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0"
   },
   "browserslist": [
