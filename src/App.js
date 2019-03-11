@@ -1,14 +1,51 @@
-import React from 'react';
-import { Provider, Flex, Box, Container } from 'rebass';
+import React, { Component } from 'react';
+import { Flex, Box } from 'rebass';
+import { createGlobalStyle } from 'styled-components';
 import Masthead from './Masthead';
 import MoonData from './MoonData';
 import GetMoonPhaseBtn from './GetMoonPhaseBtn';
 import Footer from './Footer';
 import MoonBackground from './MoonBackground';
 
+const GlobalStyle = createGlobalStyle` 
+  *,
+  *:before,
+  *:after {
+    transition: inherit;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    }
+
+
+  ::selection {
+    background-color: #00f;
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+`;
+
 const API_KEY = '2d50e8d7d184fe13';
 
-class App extends React.Component {
+class App extends Component {
   state = {
     country: undefined,
     city: undefined,
@@ -41,16 +78,13 @@ class App extends React.Component {
   };
   render() {
     return (
-      <Provider>
-        <Flex
-          flexWrap="wrap"
-          alignItems="center"
-          justifyContent="space-between"
-        >
+      <>
+        <GlobalStyle />
+        <Flex alignItems="center" justifyContent="space-between">
           <Box width={[0, 1 / 4, 1 / 4]}>
             <MoonBackground />
           </Box>
-          <Container w={[1, 1 / 3, 1 / 3]} pt={[4, 0, 0]} px={[3, 0, 0]}>
+          <Box width={[1, 1 / 2, 1 / 3]} pt={[4, 0, 0]} mr={5}>
             <Masthead />
             <GetMoonPhaseBtn
               children="Get Current Moon Phase"
@@ -63,9 +97,9 @@ class App extends React.Component {
               error={this.state.error}
             />
             <Footer />
-          </Container>
+          </Box>
         </Flex>
-      </Provider>
+      </>
     );
   }
 }
