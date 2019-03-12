@@ -80,7 +80,7 @@ class App extends Component {
           <Box width={[0, 1 / 4, 1 / 4]}>
             <MoonBackground />
           </Box>
-          <Box width={[1, 1 / 2, 1 / 3]} pt={[4, 0, 0]} mr={5}>
+          <Box width={[1, 1 / 2]} pt={[4, 0, 3]} p={[5, 3, 5]}>
             <Masthead />
             <GetMoonPhaseBtn
               children="Get Current Moon Phase"
