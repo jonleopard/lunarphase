@@ -57,12 +57,12 @@ class App extends Component {
   getMoonPhase = async e => {
     e.preventDefault();
     const api_call = await fetch(
-      `https://api.darksky.net/forecast/52bda7962f45be67263fdcd8fe271560/37.8267,-122.4233`
+      `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/52bda7962f45be67263fdcd8fe271560/37.8267,-122.4233`
     );
-    const data = await api_call.json();
-    if (data) {
+    const res = await api_call.json();
+    if (res) {
       this.setState({
-        phaseofMoon: data.moonPhase,
+        phaseofMoon: res.daily.data[0].moonPhase,
         error: '',
       });
     } else {
@@ -87,9 +87,7 @@ class App extends Component {
               onClick={this.getMoonPhase}
             />
             <MoonData
-              ageOfMoon={this.state.ageOfMoon}
               phaseofMoon={this.state.phaseofMoon}
-              percentIlluminated={this.state.percentIlluminated}
               error={this.state.error}
             />
             <Footer />
