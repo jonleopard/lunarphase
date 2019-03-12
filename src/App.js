@@ -43,8 +43,6 @@ const GlobalStyle = createGlobalStyle`
 
 `;
 
-const API_KEY = '2d50e8d7d184fe13';
-
 class App extends Component {
   state = {
     country: undefined,
@@ -59,14 +57,12 @@ class App extends Component {
   getMoonPhase = async e => {
     e.preventDefault();
     const api_call = await fetch(
-      `https://api.wunderground.com/api/${API_KEY}/astronomy/q/France/Paris.json`
+      `https://api.darksky.net/forecast/52bda7962f45be67263fdcd8fe271560/37.8267,-122.4233`
     );
     const data = await api_call.json();
     if (data) {
       this.setState({
-        ageOfMoon: data.moon_phase.ageOfMoon,
-        phaseofMoon: data.moon_phase.phaseofMoon,
-        percentIlluminated: data.moon_phase.percentIlluminated,
+        phaseofMoon: data.moonPhase,
         error: '',
       });
     } else {
