@@ -10282,10 +10282,10 @@ styled-system@^3.2.1:
     "@babel/runtime" "^7.1.2"
     prop-types "^15.6.2"
 
-styled-system@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-4.0.5.tgz#40adb6039d698ad786ecfce32eb93fdd77bee78b"
-  integrity sha512-9oTFHe5Wrtxw7+vOzano0hXZiRDh6JW5fH025kxCvw7r4YHyrV6HXw8qjcK2MxjrqF+p7ayVhzU7OIy6x8Dj1w==
+styled-system@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-4.0.6.tgz#53f95cd0134fc7ffdb263af720cd826c352bf5b8"
+  integrity sha512-QkZKB2CnmSWe6o/qVHFT3pkKTNzvK2nRKOHPGV4CrlSK3mWyL8VtMEy0RsIzMNjNPtF9d4EEQ/HwkpMJfWpWHg==
   dependencies:
     "@babel/runtime" "^7.3.4"
     prop-types "^15.7.2"
