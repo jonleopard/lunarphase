@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prepublish": "yarn run build"
+    "prepublish": "npm run build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
