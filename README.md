@@ -4,7 +4,7 @@ A small application that shows the current moon phase for your location.
 
 ## To develop locally
 
-    yarn install && yarn start
+    npm install && npm run start
 
 ---
 
