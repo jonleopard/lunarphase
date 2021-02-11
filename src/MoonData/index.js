@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex, Box, Text } from 'rebass';
 
-const MoonData = props => (
+const MoonData = (props) => (
   <Flex flexWrap="wrap" flexDirection="column">
     <Box w={1} pt={3}>
       {props.ageOfMoon && (

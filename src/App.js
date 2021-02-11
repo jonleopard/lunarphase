@@ -54,7 +54,7 @@ class App extends Component {
     isLoaded: false,
   };
 
-  getMoonPhase = async e => {
+  getMoonPhase = async (e) => {
     e.preventDefault();
     const api_call = await fetch(
       `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/52bda7962f45be67263fdcd8fe271560/37.8267,-122.4233`

@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex } from 'rebass';
 import Link from '../Link';
 
-const Footer = props => (
+const Footer = (props) => (
   <footer>
     <Flex mt={3}>
       <Link
