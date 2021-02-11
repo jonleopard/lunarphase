@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "eslint-config-prettier": "^6.15.0",
     "grid-styled": "^5.0.2",
     "palx": "^1.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-feather": "^2.0.9",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^4.0.2",
     "rebass": "^4.0.7",
     "styled-components": "^5.2.1",
     "styled-system": "^5.1.5"
@@ -19,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -28,11 +27,13 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.12.13",
     "babel-cli": "^6.26.0",
     "babel-plugin-styled-components": "^1.12.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "husky": "^4.3.8",
-    "lint-staged": "^10.5.3",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0"
   },
